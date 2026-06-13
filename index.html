@@ -220,6 +220,95 @@
             font-size: 0.95rem;
         }
 
+        /* Download Section */
+        .download-section {
+            background: rgba(0, 123, 255, 0.05);
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+            text-align: center;
+            border: 1px solid rgba(0, 123, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .download-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #007BFF;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #007BFF 0%, #0056cc 100%);
+            color: white;
+            border: 2px solid #007BFF;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: rgba(0, 123, 255, 0.05);
+            padding: 3rem 2rem;
+            margin: 4rem 0;
+            border: 1px solid rgba(0, 123, 255, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #007BFF;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+            justify-content: center;
+        }
+
+        .contact-item a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+            transform: scale(1.05);
+        }
+
         /* Footer */
         footer {
             background: rgba(10, 10, 10, 0.95);
@@ -232,23 +321,6 @@
 
         footer p {
             margin: 0.5rem 0;
-        }
-
-        .social-links {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            color: #007BFF;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
         }
 
         /* Responsive */
@@ -291,6 +363,29 @@
                 width: 220px;
                 height: 220px;
             }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .download-btn {
+                width: 100%;
+            }
+
+            .download-section h2 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -310,7 +405,7 @@
     <div class="hero" id="home">
         <div class="hero-content">
             <h1>AHXAN BATTLE</h1>
-            <p>Experience the ultimate action-packed gaming adventure! Join thousands of warriors, engage in epic real-time battles, and conquer the battlefield with stunning graphics and smooth gameplay.</p>
+            <p>Experience the ultimate action-packed gaming adventure! Join thousands of warriors, engage in epic real-time battles, and conquer the battlefield with stunning graphics and smooth gameplay!</p>
 
             <div class="features">
                 <div class="feature-item">Smooth & Lightning-Fast Gameplay</div>
@@ -319,10 +414,6 @@
                 <div class="feature-item">Epic Rewards & Achievements</div>
                 <div class="feature-item">Regular Updates & New Content</div>
             </div>
-
-            <a href="https://www.mediafire.com/file/3ed1f3ytgv0meyx/Ahxan+battle.apk/file" class="cta-button" id="download">
-                ⬇️ INSTALL NOW
-            </a>
         </div>
 
         <div class="hero-image">
@@ -348,14 +439,39 @@
         </div>
     </div>
 
+    <!-- Download Section -->
+    <div class="download-section" id="download">
+        <h2>⬇️ DOWNLOAD NOW</h2>
+        <div class="download-buttons">
+            <a href="https://www.mediafire.com/file/3ed1f3ytgv0meyx/Ahxan+battle.apk/file" class="download-btn">📱 Download APK</a>
+            <a href="https://www.mediafire.com/file/3ed1f3ytgv0meyx/Ahxan+battle.apk/file" class="download-btn">🎮 Install Game</a>
+            <a href="todo.html" class="download-btn">✅ Todo List App</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <h2>📞 GET IN TOUCH</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>💬 Telegram:</span>
+                <a href="https://t.me/Ahxanbattle" target="_blank">@Ahxanbattle</a>
+            </div>
+            <div class="contact-item">
+                <span>📧 Email:</span>
+                <a href="mailto:support@ahxanbattle.com">support@ahxanbattle.com</a>
+            </div>
+            <div class="contact-item">
+                <span>🌐 Follow Us:</span>
+                <a href="#" target="_blank">Instagram</a> • <a href="#" target="_blank">Discord</a> • <a href="#" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <p>&copy; 2026 Ahxan Battle. All rights reserved.</p>
         <p>Experience the ultimate gaming action on your Android device!</p>
-        <p><strong>support@ahxanbattle.com</strong></p>
-        <div class="social-links">
-            <a href="#">Facebook</a> • <a href="#">Instagram</a> • <a href="#">Discord</a>
-        </div>
     </footer>
 </body>
 </html>
